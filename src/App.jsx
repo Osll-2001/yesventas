@@ -1,10 +1,9 @@
 import './App.css'
+import RouterIndex from './routes'
 
-function App() {
+function App () {
   return (
-    <>
-      
-    </>
+    <RouterIndex />
   )
 }
 
