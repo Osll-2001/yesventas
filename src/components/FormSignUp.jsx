@@ -44,7 +44,7 @@ const FormSignUp = () => {
         </section>
 
         <section className='formItem signUp'>
-          <p>¿Ya tienes una cuenta? <Link to='/login' style={{ color: '#fafafa' }}>Inicia Sesión</Link> </p>
+          <p>¿Ya tienes una cuenta? <Link to='/login' className='link'>Inicia Sesión</Link> </p>
         </section>
 
       </form>

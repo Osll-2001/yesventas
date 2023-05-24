@@ -1,6 +1,6 @@
 .containerForm{
    width: 500px;
-   background-color: rgba(33, 33, 33, 0.7);;
+   background-color: rgba(33, 33, 33, 0.7);
    margin: 10vh auto;
    color: #FAFAFA;
    border-radius: 5px;
@@ -56,6 +56,16 @@
 
       .signUp{
          text-align: center;
+         
+         .link{
+           color: #1B9C85;
+           text-decoration: none;
+
+           &:hover{
+               color: #FAFAFA;
+           }
+         }
+
       }
    }
 }

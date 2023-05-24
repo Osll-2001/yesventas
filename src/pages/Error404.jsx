@@ -1,10 +1,11 @@
 import React from 'react'
+import ContainerError404 from '../components/ContainerError404'
 
 const Error404 = () => {
   return (
-    <div>
-      <h1>Error 404</h1>
-    </div>
+    <>
+      <ContainerError404 />
+    </>
   )
 }
 
