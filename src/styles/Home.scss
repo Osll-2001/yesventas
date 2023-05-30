@@ -1,0 +1,57 @@
+.navHome{
+    //background-color: rgba(33, 33, 33, 0.5);
+    background-color: #212121;
+    color: #FAFAFA;
+    width: auto;
+    display: grid;
+    grid-template-columns: 5% 75% 20%;
+    height: 80px;
+
+    .logo{
+        display: flex;
+        align-items: center;
+        .imgLogo{
+            width: 60px;
+            height: 60px;
+        }
+    }
+
+    /* .item engloba tanto a los items de la seccionProfile y la sections*/
+    .item{
+        cursor: pointer;
+        
+        &:hover{
+            color:#1B9C85;
+        }
+    }
+
+    /*FIN*/
+
+    .itemsSection, .itemsProfile{
+        margin: 0;
+        height: 100%;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .sections{
+        .itemsSection{
+            font-size: 20px;
+        }
+    }
+
+    .profile{
+        .itemsProfile{
+
+            .item{
+
+                .editAccount{
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+}

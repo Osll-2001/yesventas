@@ -1,7 +1,9 @@
+import NavHome from "../components/NavHome"
+
 const Home = () => {
   return (
     <div>
-      <h1>Home</h1>
+      <NavHome />
     </div>
   )
 }
