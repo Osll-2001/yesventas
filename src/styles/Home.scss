@@ -27,7 +27,7 @@
 
     /*FIN*/
 
-    .itemsSection, .itemsProfile{
+    .itemsSection, .itemsProfile , .menuSectionToggle{
         margin: 0;
         height: 100%;
         list-style: none;
@@ -39,19 +39,71 @@
 
     .sections{
         .itemsSection{
-            font-size: 20px;
+            font-size:  1.2rem;
         }
     }
 
     .profile{
         .itemsProfile{
-
             .item{
 
                 .editAccount{
-                    font-size: 25px;
+                    font-size: 1.5rem;
                 }
             }
+            .item.userName{
+                color: #1B9C85;
+                font-style: italic;
+            }
         }
+    }
+
+    .menuSectionToggle{
+        display: none;
+        font-size: 1.5rem;
+        margin-right: 3rem;
+        position: relative;
+    }
+
+    .itemsMenuDropDown{
+        list-style: none;
+        font-size: 1.2rem;
+        background-color: #212121;
+        position: absolute;
+        top: 50%;
+        width: 50%;
+
+        .item{
+            padding: 10px;
+        }
+        .userName{
+            color: #423f3f;
+            font-style: italic;
+            cursor: text;
+        }
+        .editUser{
+            margin-bottom: 10px;
+            margin-top: 0;
+            border-bottom: 1px solid #423f3f;
+        }
+        .exitMenuDrop{
+            border-top:1px solid #423f3f;
+        }
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    .navHome{
+        grid-template-columns: 10% 90%;
+    }
+
+    .sections, .profile{
+        display: none;
+    }
+
+    .navHome .menuSectionToggle{
+        display: flex;
+        justify-content: end;
     }
 }
