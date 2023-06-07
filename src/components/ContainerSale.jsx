@@ -3,7 +3,7 @@ import React from 'react'
 const ContainerSale = () => {
   return (
     <div className='containerSale'>
-      <section className='dataClient'>
+      <section className='dataCostumer'>
         <h1>Datos del cliente</h1>
       </section>
       <section className='Sale'>
