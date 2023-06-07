@@ -1,5 +1,5 @@
 .containerForm{
-   width: 500px;
+   width: 100vw;
    background-color: rgba(33, 33, 33, 0.7);
    margin: 10vh auto;
    color: #FAFAFA;
@@ -68,5 +68,12 @@
          }
 
       }
+   }
+}
+
+
+@media screen and (min-width: 550px) {
+   .containerForm{
+      width: 500px;
    }
 }
