@@ -1,5 +1,5 @@
 import '../styles/Home.scss'
-import { FaUserEdit, FaCashRegister, FaGifts, FaPrint, FaUser, FaBars, FaDoorOpen } from 'react-icons/fa'
+import { FaUserEdit, FaCashRegister, FaGifts, FaPrint, FaUser, FaBars } from 'react-icons/fa'
 import { useState } from 'react'
 
 const NavHome = () => {

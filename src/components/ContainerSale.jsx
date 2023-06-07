@@ -2,7 +2,14 @@ import React from 'react'
 
 const ContainerSale = () => {
   return (
-    <div>ContainerSale</div>
+    <div className='containerSale'>
+      <section className='dataClient'>
+        <h1>Datos del cliente</h1>
+      </section>
+      <section className='Sale'>
+        <h1>Venta de los productos</h1>
+      </section>
+    </div>
   )
 }
 
