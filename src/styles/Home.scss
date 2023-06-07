@@ -50,11 +50,13 @@
                 .editAccount{
                     font-size: 1.5rem;
                 }
+                &.userName{
+                    color: #1B9C85;
+                    font-style: italic;
+                }
+
             }
-            .item.userName{
-                color: #1B9C85;
-                font-style: italic;
-            }
+            
         }
     }
 
@@ -88,10 +90,16 @@
         }
         .exitMenuDrop{
             border-top:1px solid #423f3f;
+            color: #B31312;
         }
     }
 }
 
+@media screen and (max-width:1150px){
+    .navHome{
+        grid-template-columns: 5% 70% 25%;
+    }
+}
 
 @media screen and (max-width: 900px) {
     .navHome{
@@ -107,3 +115,4 @@
         justify-content: end;
     }
 }
+

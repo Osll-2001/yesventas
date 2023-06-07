@@ -43,6 +43,7 @@ const NavHome = () => {
           <ul className='itemsMenuDropDown'>
             <li className='item userName'><FaUser /> osll2001</li>
             <li className='item editUser'>Configuración</li>
+            <li className='item'>Ventas</li>
             <li className='item'>Productos</li>
             <li className='item'>Reportes</li>
             <li className='item'>Clientes</li>
