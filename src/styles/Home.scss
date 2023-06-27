@@ -1,7 +1,12 @@
+//COLOR DE FONDO EN EL PROYECTO
+$colorOpacity: rgba(33, 33, 33, 0.8);
+$colorText: #FAFAFA;
+$colorNav: #212121;
+
 .navHome{
     //background-color: rgba(33, 33, 33, 0.5);
-    background-color: #212121;
-    color: #FAFAFA;
+    background-color: $colorNav;
+    color: $colorText;
     width: auto;
     display: grid;
     grid-template-columns: 5% 75% 20%;
@@ -22,7 +27,7 @@
 
         .link{
             text-decoration: none;
-            color:#FAFAFA;
+            color: $colorText;
             &:focus{
                 color: inherit;
             }
@@ -143,19 +148,69 @@
 .containerSale{
     width: 95%;
     margin: 2.5%;
-    background-color: rgba(33, 33, 33, 0.8);;
-    color: #FAFAFA;
+    height: 80vh;
+    background-color: $colorOpacity;
+    color: $colorText;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 30% 70%;
+    grid-template-rows: 30% 60%;
+    row-gap: 10%;
+
+    /*ESTILOS CONTENEDOR DE LOS DATOS DEL CLIENTE*/
+    .dataCostumer{
+        display: grid;
+        grid-template-columns: 15% 70% 15%;
+        grid-template-rows: 100%;
+        height: fit-content;
+        padding: 1%;
+
+        .searchCostumer, .infoCostumer, .infoDocument{
+            width: 100%;
+            height: auto;
+            display: grid;
+            grid-template-rows: 50% 50%;
+            grid-template-columns: 100%;
+
+            .nameCostumer, .emailCostumer, .RFCCostumer, .folioSale{
+                background-color: $colorOpacity;
+                border: none;
+                margin-top: 5px;
+                text-align: center;
+                color: $colorText;
+                font-size: 20px;
+            }
+        }
+
+        .searchCostumer{
+            .searchID{
+                font-size: 20px;
+                border: none;
+            }
+        }
+
+        .infoCostumer{
+            justify-items: center;
+
+            .nameCostumer, .emailCostumer{
+                width: 80%;
+            }
+        }
+
+        .infoDocument{
+
+        }
+    }
+
+    .sale{
+        height: fit-content;
+    }
 
 }
 
 
 /*STYLES OF FOOTER*/
 .footerMain{
-    background-color: rgba(33, 33, 33, 0.8);
-    position: fixed;
+    background-color: $colorOpacity;
     width: 100%;
     height: auto;
     display: flex;
@@ -163,5 +218,5 @@
     justify-content: center;
     left: 0;
     bottom: 0;
-    color:#FAFAFA;
+    color:$colorText;
 }
