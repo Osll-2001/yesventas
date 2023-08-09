@@ -19,7 +19,7 @@ const RouterIndex = () => {
   const hideNavbar = ['/login', '/signup'].includes(pathname)
   return (
     <>
-      {hideNavbar ? <></> : <NavHome />}
+      {hideNavbar ? <></> : <header> <NavHome /> </header>}
       <Routes>
         <Route exact path='/home' element={<Home />} />
         {/* Redirect the patch "/" to "/home" */}
